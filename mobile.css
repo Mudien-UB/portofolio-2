@@ -1,0 +1,397 @@
+@media screen and (min-width: 1111px) {
+    .hamburger{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1111px){
+
+    .hamburger{
+        display: none;
+    }
+
+    #about{
+        flex-direction: row;
+        padding-top:3em ;
+        flex-wrap: wrap;
+        height: auto;
+        
+        .bio, .skil{
+            width: 45%;
+            aspect-ratio: 2/1;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .bio p, .skil p, .projek p {
+            font-size: 14px;   
+            width: 100%;
+        }
+        .skil, .projek{
+            h3{
+                margin: 20px 0 30px 0;
+            }
+        }
+        .bio{
+            img{
+                margin-top: 25px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .skil{
+            img{
+                scale: 1.2;
+            }
+        }
+        .projek {
+            width: 100%;
+            aspect-ratio: 2/1;
+            margin: 20px;
+            padding: 20px;
+            
+            
+            .projek-card {
+                .item{
+                    width: 25%;
+                    
+                    h4{
+                        display: block;
+                        left: 10px;
+                        bottom: 30px;
+                        padding: 5px;
+                    }
+                    a{
+                        display: block;
+                        left: 10px;
+                        bottom: 15px;
+                        padding: 5px;
+                    }
+
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        filter: brightness(80%);
+                    }
+                }
+            }
+            
+        }
+        .logo{
+            width: 100%;
+            height: auto;
+        }
+
+        .logo img{
+            width: 50px;
+            font-size: 12px;
+        }
+    }
+    #kontak{
+        .back{
+            form{
+                margin-top: 2em;
+            }
+        }
+    }
+
+}
+
+@media (min-width:525px) and (max-width: 768px) {
+        #mynavbar {
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            padding: 10px;
+            
+            .ubey.active{
+                display: none;
+                opacity: 0;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+            
+            .list-nav {
+                display: none; /* Awalnya disembunyikan */
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                opacity: 0; /* Transparan pada awalnya */
+                max-height: 0; /* Awalnya tinggi 0 untuk efek transisi */
+                overflow: hidden;
+                transition: max-height 0.4s ease, opacity 0.4s ease; 
+            }
+            
+            .list-nav.active {
+                display: flex;
+                opacity: 1;
+                max-height: 300px;    
+            }
+            
+            .list-nav a {
+            width: 100%;
+            padding: 15px 0;
+            margin: 0;
+            text-align: left;
+            border-bottom: 1px solid #7ab37c;
+            }
+            
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin-right: 7%;
+                padding: 2px;
+            }
+            
+            .hamburger div {
+                width: 30px;
+                height: 3px;
+                background-color: #7ab37c;
+                margin: 4px 0;
+                transition: 0.5s ease;
+            }
+            
+            /* Tambahkan transformasi animasi pada ikon hamburger */
+            .hamburger.active .hamburger-item-1 {
+                transform: rotate(45deg) translate(5px, 5px);
+                transition: transform 0.4s ease; /* Haluskan transisi */
+                
+            }
+            
+            .hamburger.active .hamburger-item-2 {
+                opacity: 0;
+                transition: opacity 0.4s ease; /* Haluskan transisi */
+                
+            }
+            
+            .hamburger.active .hamburger-item-3 {
+                transform: rotate(-45deg) translate(5px, -5px);
+                transition: transform 0.4s ease; /* Haluskan transisi */
+                
+            }
+        }
+    
+        #home{
+    
+            padding: 0;
+    
+    
+        }
+        
+        #about{
+            flex-direction: column;
+            height: auto;
+            
+            .bio, .skil {
+                width: 90%;
+                padding: 15px;
+                margin: 20px auto;
+            }
+    
+
+            .bio p, .skil p {
+                font-size: 14px;
+                width: 100%;
+            } 
+            .bio img {
+                width: 150px; 
+                margin-bottom: 2em;
+            }
+            .skil {
+                
+                .logo{
+                    
+                    gap: 30px;
+                
+                    img{
+                        scale: 1.09;
+                        filter: grayscale(15%);
+                    }
+                }
+            }
+            .projek{
+                display: none;
+            }
+        }
+
+        #kontak{
+            .back{
+                form{
+
+                    label{
+                        font-size: 14px;
+                    }
+
+                    input{
+                        font-size: 14px
+                    }
+
+                    textarea{
+                        aspect-ratio: 3/1;
+                    }
+                }
+            }
+        }
+        
+    
+}
+
+@media (max-width:525px){
+
+    #mynavbar {
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        padding: 10px;
+        
+        .ubey.active{
+            display: none;
+            opacity: 0;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+        
+        .list-nav {
+            display: none; /* Awalnya disembunyikan */
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            opacity: 0; /* Transparan pada awalnya */
+            max-height: 0; /* Awalnya tinggi 0 untuk efek transisi */
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.4s ease; 
+        }
+        
+        .list-nav.active {
+            display: flex;
+            opacity: 1;
+            max-height: 300px;    
+        }
+        
+        .list-nav a {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 12px;
+        margin: 0;
+        text-align: left;
+        border-bottom: 1px solid #7ab37c;
+        }
+        
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 7%;
+            padding: 2px;
+        }
+        
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background-color: #7ab37c;
+            margin: 4px 0;
+            transition: 0.5s ease;
+        }
+        
+        /* Tambahkan transformasi animasi pada ikon hamburger */
+        .hamburger.active .hamburger-item-1 {
+            transform: rotate(45deg) translate(5px, 5px);
+            transition: transform 0.4s ease; /* Haluskan transisi */
+            
+        }
+        
+        .hamburger.active .hamburger-item-2 {
+            opacity: 0;
+            transition: opacity 0.4s ease; /* Haluskan transisi */
+            
+        }
+        
+        .hamburger.active .hamburger-item-3 {
+            transform: rotate(-45deg) translate(5px, -5px);
+            transition: transform 0.4s ease; /* Haluskan transisi */
+            
+        }
+    }
+
+    #home{
+
+        padding: 0;
+
+    }
+    
+    #about{
+        flex-direction: column;
+        height: auto;
+        
+        .bio, .skil {
+            width: 90%;
+            padding: 15px;
+            margin: 20px auto;
+        }
+
+
+        .bio p, .skil p {
+            font-size: 12px;
+            width: 100%;
+        } 
+        .bio img {
+            width: 100px; 
+            margin-bottom: 1em;
+        }
+        .skil {
+            height: max-content;
+            .logo{
+                width: 100%;
+                height: max-content;
+                gap: 10px;
+                padding: 10px;
+                margin: 10px;
+            
+                img{
+                    scale: 0.99;
+                    filter: grayscale(15%);
+                }
+            }
+        }
+        .projek{
+            display: none;
+        }
+    }
+
+    #kontak{
+        height: max-content;
+        .back{
+            height: max-content;
+            form{
+                margin-top: 0;
+                padding: 20px;
+                label{
+                    font-size: 14px;
+                }
+
+                input{
+                    font-size: 12px
+                }
+
+                textarea{
+                    aspect-ratio: 2/1;
+                }
+            }
+        }
+    }
+    #media{
+        h4{
+            margin-top: 20px;
+            .logo-kontak{
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

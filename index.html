@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header>
+        <nav id="mynavbar" class="mynavbar" onclick="tohome()">
+            <a class="ubey" href="#home">
+                <img src="./assets/img/ubey.svg" alt="Ubey">
+            </a>
+            <div class="list-nav">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#media">CONTACT</a>
+            </div>
+            <div class="hamburger">
+                <div class="hamburger-item-1"></div>
+                <div class="hamburger-item-2"></div>
+                <div class="hamburger-item-3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="home" id="home">
+        <img src="./assets/img/ubey.svg" alt="ubey">
+        <h4 onclick="tokontak()">Hi! Ubay Lahmudien Here</h4>
+        <h6 onclick="tokontak()">Designer and Fullstack Developer From Village</h6>
+        <a href="https://drive.google.com/file/d/171jC8gZp7dMeyMxNX6elhOmZNCu8IAnJ/view?usp=sharing" target="_blank" download >DOWNLOAD CV</a>
+        <div class="panah" onclick="scrollKeBawah()">
+            <p>scroll</p>
+            <span class="panah-item"></span>
+        </div>
+    </section>
+    
+
+    <section class="about" id="about">
+
+        <div class="bio">
+            <img src="./assets/img/me.png" alt="myprofile">
+            <p>Hi, I'm Ubay Lahmudien Maghfirly, a programmer and designer. I have a strong passion for software development and visual design. With experience in various programming languages and UI/UX design skills, I strive to create digital solutions that are both creative and functional. 
+            </P>
+            <P>My main focus is combining technology and art to deliver products that not only look great but also perform effectively. I’m always excited to collaborate on interesting projects that sharpen my skills and make a positive impact.</p>
+
+        </div>
+        <div class="skil">
+
+            <h3>MY SKILLS</h3>
+            <p>My skill set seamlessly blends creative design with technical system. I am passionate about leveraging this unique blend to create innovative digital solutions that not only captivate but also deliver outstanding user experiences.</p>
+            <p>My toolkit which fuels both my creativity and technical acumen, includes:</p>
+
+            <div class="logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" style="scale: 1.5;"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" style="scale: 1.4;"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+
+
+            </div>
+
+        </div>
+        
+        <div class="projek">
+            <h3>MY PROJECTS</h3>
+
+            <div class="projek-card">
+                <div class="item">
+                    <img src="./assets/img/tictactoe.png" alt="tictactoe-games" onclick="window.open('https://tictactoe-games-nine.vercel.app/', '_blank')">
+                    <h4>TIC-TAC-TOE GAME</h4>
+                    <a href="https://github.com/Mudien-UB/tictactoe-games" target="_blank">see source code...</a>
+                </div>
+                <div class="item">
+                    <img src="" alt="none" onclick="window.open('error.html', '_blank')">
+                    <h4>ERROR</h4>
+                    <a href="error.html" target="_blank">doesnt connect</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    
+
+    <section class="kontak" id="kontak">
+        <div class="back">
+            
+            <form action="https://formspree.io/f/mblrenrr" method="POST">
+                <label for="#" style="margin-top: 10px; font-size: 24px; font-weight: 700; text-decoration: underline; text-underline-offset: 10px;">SEND ME</label>
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        
+          
+
+        </div>
+    </section>
+
+    <footer id="media">
+            <h4>MY CONTACT :</h4>
+    
+            <div class="logo-kontak">
+                <img style="filter: brightness(200);" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="github" onclick="window.open('https://github.com/Mudien-UB','_blank') "/>
+                
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="linkedin" onclick="window.open('https://www.linkedin.com/in/ubay-lahmudien-mudienub075/','_blank') " />
+            </div>
+        
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
